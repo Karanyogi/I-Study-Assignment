@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block content %}
+
+
+
+
+<table>
+
+	{% for pizza in pizza_list %}
+	<tr>
+  {% include "pizza/_pizza.html" %}
+		<button type="button" class="btn btn-success">Order Now</button>
+	</tr>
+	{% endfor %}
+
+
+
+
+</table>
+{% endblock %}
